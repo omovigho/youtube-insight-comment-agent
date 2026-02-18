@@ -1,5 +1,4 @@
 # youtube-insight-comment-agent
-# YouTube Comment Insight Agent
 
 ## Overview
 The YouTube Comment Insight Agent is a specialized tool designed to analyze YouTube video comments. It provides insights into audience feedback, sentiment, and common themes, helping content creators and marketers understand their audience better.
