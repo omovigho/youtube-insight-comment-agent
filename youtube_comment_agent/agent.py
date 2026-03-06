@@ -27,8 +27,8 @@ def analyze_youtube_video(video_id: str) -> str:
     # Format comments (limit to first 1000 to be safe, though fetch_comments defaults to 1000)
     comment_text = "\n".join([f"- {c['text']}" for c in comments[:1000]])
     
-    project = os.environ.get("GOOGLE_CLOUD_PROJECT", "adk-rag-project-479803")
-    location = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
+    project = os.environ.get("GOOGLE_CLOUD_PROJECT")
+    location = os.environ.get("GOOGLE_CLOUD_LOCATION")
     
     try:
         client = genai.Client(vertexai=True, project=project, location=location)
